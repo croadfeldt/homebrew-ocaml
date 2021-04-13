@@ -13,23 +13,23 @@
 class Ocaml < Formula
   desc "General purpose programming language in the ML family"
   homepage "https://ocaml.org/"
-  url "https://github.com/ocaml/ocaml/archive/refs/tags/4.11.2.zip"
-  sha256 "6cab034d51db98fa60fe3d9d4658ef0291a87d1ff4ec0af042f6fc907d386c6c"
+  url "https://github.com/ocaml/ocaml/archive/refs/tags/4.12.0.zip"
+  sha256 "95df7f723cc822f9ec165dd1ad7602201f24b71a508aeef2268716b32cf914bc"
   license "LGPL-2.1"
-  head "https://github.com/ocaml/ocaml.git", branch: "4.11"
+  head "https://github.com/ocaml/ocaml.git", branch: "4.12"
 
   livecheck do
     url "https://ocaml.org/releases/"
     regex(/href=.*?v?(\d+(?:\.\d+)+)\.html/i)
   end
 
-  bottle do
-    cellar :any
-    sha256 "e6258cd7012b9c0d8e961eb661cc11bc42c388d2153a9f8b9f0a37cf4e63a0f7" => :big_sur
-    sha256 "0870fc3042b3725fb2c6f131c4d6f78aec9f19d553e054ba4890773ef69e45a7" => :catalina
-    sha256 "b43a7247e3d3848d5f20d2432d4996e41049e79c738762f1026f4376ec7e80d3" => :mojave
-    sha256 "a534347814298cc8e66e321384f16eac85f2a59aaa2f536e542fb4870386bc2b" => :high_sierra
-  end
+  #bottle do
+  #  cellar :any
+  #  sha256 "e6258cd7012b9c0d8e961eb661cc11bc42c388d2153a9f8b9f0a37cf4e63a0f7" => :big_sur
+  #  sha256 "0870fc3042b3725fb2c6f131c4d6f78aec9f19d553e054ba4890773ef69e45a7" => :catalina
+  #  sha256 "b43a7247e3d3848d5f20d2432d4996e41049e79c738762f1026f4376ec7e80d3" => :mojave
+  #  sha256 "a534347814298cc8e66e321384f16eac85f2a59aaa2f536e542fb4870386bc2b" => :high_sierra
+  #end
 
   pour_bottle? do
     # The ocaml compilers embed prefix information in weird ways that the default
