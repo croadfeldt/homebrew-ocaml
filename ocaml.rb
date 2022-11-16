@@ -13,8 +13,8 @@
 class Ocaml < Formula
   desc "General purpose programming language in the ML family"
   homepage "https://ocaml.org/"
-  url "https://github.com/ocaml/ocaml/archive/refs/tags/4.12.0.zip"
-  sha256 "95df7f723cc822f9ec165dd1ad7602201f24b71a508aeef2268716b32cf914bc"
+  url "https://github.com/ocaml/ocaml/archive/refs/tags/4.14.0.tar.gz"
+  sha256 "39f44260382f28d1054c5f9d8bf4753cb7ad64027da792f7938344544da155e8"
   license "LGPL-2.1"
   head "https://github.com/ocaml/ocaml.git", branch: "4.12"
 
